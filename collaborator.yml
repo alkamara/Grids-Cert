@@ -1,0 +1,7 @@
+parameters:
+  collaborator_cpu_limit: "4"
+  collaborator_landing_page_favicon: https://${collaborator_url_prefix}.${domain_fqdn}/favicon.ico
+  collaborator_landing_page_title: SmartBear Collaborator
+  collaborator_memory_limit: 8Gi
+  collaborator_url_prefix: collaborator
+  collaborator_volume_size: 5Gi

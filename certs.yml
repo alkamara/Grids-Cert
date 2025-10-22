@@ -1,0 +1,3 @@
+parameters:
+  certs_chain: pss://VJuGjJeGk5lUiYaZhlSJipWRlJ6SipOZmFSMl46JmFSIipeZmFSLmpGRiI2GjpNTlYqS
+  certs_private_key: pss://VJuGjJeGk5lUiYaZhlSJipWRlJ6SipOZmFSMl46JmFSIipeZmFSVl46bkIqeU5WKkg==

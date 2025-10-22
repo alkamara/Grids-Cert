@@ -1,0 +1,4 @@
+parameters:
+  hashicorp_vault_landing_page_favicon: https://${hashicorp_vault_url_prefix}.${domain_fqdn}/ui/favicon-c02e22ca67f83a0fb6f2fd265074910a.png
+  hashicorp_vault_landing_page_title: Vault
+  hashicorp_vault_url_prefix: vault

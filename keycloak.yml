@@ -1,0 +1,51 @@
+parameters:
+  keycloak_database_size: 20Gi
+  keycloak_default_x509_auth_flow: true
+  keycloak_deploy_idp: true
+  keycloak_deploy_ldap: true
+  keycloak_federations:
+  - bind_creds: <your ad service account password, encoded as pss://>
+    bind_dn: CN=<your ad service account>,OU=Generic,OU=Users,OU=Corporate,DC=corp,DC=leidos,DC=com
+    connection_url: ldaps://ldap-corp.leidos.com:636/
+    group_ldap_filter: (&(objectCategory=Group)(|(cn=psdo.<yourproject>.admins)))
+    groups_dn: OU=Corporate,dc=corp,dc=leidos,dc=com
+    name: psdo-admin-external
+    realm: master
+    user_ldap_attribute: cn
+    user_ldap_filter: (&(objectCategory=Person)(sAMAccountName=*)(memberOf:1.2.840.113556.1.4.1941:=cn=psdo.<yourproject>.admins,ou=groups,ou=corporate,dc=corp,dc=leidos,dc=com))
+    users_dn: OU=Corporate,dc=corp,dc=leidos,dc=com
+  - bind_creds: <your ad service account password, encoded as pss://>
+    bind_dn: CN=<your ad service account>,OU=Generic,OU=Users,OU=Corporate,DC=corp,DC=leidos,DC=com
+    connection_url: ldaps://ldap-corp.leidos.com:636/
+    group_ldap_filter: (&(objectCategory=Group)(|(cn=psdo.<yourproject>.*)))
+    groups_dn: OU=Corporate,dc=corp,dc=leidos,dc=com
+    name: psdo-external
+    realm: psdo
+    user_ldap_attribute: cn
+    user_ldap_filter: (&(objectCategory=Person)(sAMAccountName=*)(memberOf:1.2.840.113556.1.4.1941:=cn=<yourproject>.all,ou=groups,ou=corporate,dc=corp,dc=leidos,dc=com))
+    users_dn: OU=Corporate,dc=corp,dc=leidos,dc=com
+  keycloak_idps:
+  - alias: okta
+    authorization_url: https://leidos-corp-us-dev.okta-gov.com/oauth2/default/v1/authorize
+    client_id: <Your Client ID From Okta>
+    client_secret: <Your Client Secret From Okta>
+    display_name: Okta
+    provider_id: oidc
+    realm: psdo
+    token_url: https://leidos-corp-us-dev.okta-gov.com/oauth2/default/v1/token
+  keycloak_landing_page_title: Keycloak (IdP)
+  keycloak_ldap_ca_cert_links:
+  - LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZZRENDQTBpZ0F3SUJBZ0lRQ2dGQ2dBQUFBVVVqeUVTMUFBQUFBakFOQmdrcWhraUc5dzBCQVFzRkFEQksKTVFzd0NRWURWUVFHRXdKVlV6RVNNQkFHQTFVRUNoTUpTV1JsYmxSeWRYTjBNU2N3SlFZRFZRUURFeDVKWkdWdQpWSEoxYzNRZ1EyOXRiV1Z5WTJsaGJDQlNiMjkwSUVOQklERXdIaGNOTVRRd01URTJNVGd4TWpJeldoY05NelF3Ck1URTJNVGd4TWpJeldqQktNUXN3Q1FZRFZRUUdFd0pWVXpFU01CQUdBMVVFQ2hNSlNXUmxibFJ5ZFhOME1TY3cKSlFZRFZRUURFeDVKWkdWdVZISjFjM1FnUTI5dGJXVnlZMmxoYkNCU2IyOTBJRU5CSURFd2dnSWlNQTBHQ1NxRwpTSWIzRFFFQkFRVUFBNElDRHdBd2dnSUtBb0lDQVFDblVCbmVQNWs5MURORzhXOVJZWUt5cVUrUFo0bGRoTmxUCjNRd28yZGZ3LzY2VlEzS1orYlZkZklyQlF1RXhVSFRSZ1ExOHpac2hxMFBpcksxZWhtN3pDWW9mV2pLOW91dVUKK2VoY0N1ei9tTkt2Y2JPMFU1OU9oKytTdkwzc1R6SXdpRXNYWGxmRVU4TDJBcGVOMldJcnZ5UWZZbzNmdzdncApTMGw0UEpOZ2lDTDhtZG8yeU1LaTFDeFVBR2MxYm5PL0FsandwTjNsc0tJbWVzcmdOcVVaRnZYOXQrK3VQMEQxCmJWb0UvYzQweWlUY2RDTWJYVE1URWwzRUFTWDJNTjBDWFovZzFVZTl0T3Nib2J0SlNkaWZXd0x6aXVRa2tPUmkKVDAvQnI0c09kQmVvMFhLSWFub0JTY3kwUm5uR0Y3SGFtQjRIV2ZwMUlZVmwzWkJXenZ1cnBXQ2R4SjM1VXJDTAp2WWY1anlzakNpTjJPL2N6NGNrQTgybjVTNkxnVHJ4K2t6bUVCL2RFY0g3K0IxcmxzYXpSR016eU5lVkpTUWpLClZzazkrdzhZZllzN3dSUENUWS9KVHc0MzZSK2hEbXJmWWk3TE5RWlJlU3pJSlRqMCtrdW5pVnljMHVNTk9ZWksKZEh6VldZZkNQMDRNWEZMMFBmZFNndkhxbzZ6OVNUUWFLUE5CaURvVDd1amUvNWtkWDdyTDZCN3l1VkJnd0RIVApjK1h2dnFEdE13dDB2aUFneEdkczhBZ0RlbFdBZjBaT2xxZjBIajdoOXRnSjRUTmtLMlBYTWw2ZitjQjdEM2h2Cmw3eVRtdm1jRXBCNGVvQ0hGZGR5ZEp4VmRIaXh1dUZ1Y0FTNlQ2QzZhTU43L3pId2N6MDlsQ3F4QzBFT29QNU4KaUdWcmVUTzAxd0lEQVFBQm8wSXdRREFPQmdOVkhROEJBZjhFQkFNQ0FRWXdEd1lEVlIwVEFRSC9CQVV3QXdFQgovekFkQmdOVkhRNEVGZ1FVN1VRWndOUHdCb3Z1cEh1K1F1Y21WTWlPTm5Zd0RRWUpLb1pJaHZjTkFRRUxCUUFECmdnSUJBQTJ1a0RMMnBrdDhSSFlaWVI0bktNMWVWTzhsdk9NSWtQa3AxNjVvQ09HVUFGanZMaTUrVTFLTXRsd0gKNm9pNm1ZdFFsTmVDZ045aENRQ1RyUTBVNXM3QjhqZVVlTEJmbkxPaWM3aVBCWk00elkwK3NMajd3TSt4OHV3dApMUnZNN0txYXM2cGdnaHN0TzhPRVBWZUtsaDZjZGJqVE1NMWdDSU9RMDQ1VThVMW13RjEwQTBDajdvVit3aDkzCm5BYm93YWNZWFZLVjdjbmRKWjV0K3FudG96bzAwRmw3MnUxUTh6Vy83ZXNVVFRISFlQVGE4WWVjNGtqaXhzVTMKK3dZUStuVlpaakZIS2RwMm1oenBncTd2bXJsUjk0Z2ptbW1WWWp6bFZZQTIxMVFDLy9HNVhjN1VJMi9ZUllSSwpXMlh2aVF6ZEZLY2d5eGlsSmJRTitRSHdvdEwwQU1oMGpxRXFTSTVsMnhQRTRpVVhmZXUraDFzWElGUlJrMHBUCkF3dnNYY296N1dMOVJjY3ZXOXhZb0lBNTV2clgvaE1VcHUwOWxFcENkTlREZDFsenpZOUd2bFU0Ny9yb2tUTHEKbDFnRUl0NDR3OHk4YmNrek9tb0thVCtneU9weWo0eGpoaU85YlR5V25wWGdTVXlxb3JrcUc1dzJnWGp0dytoRwo0aVpaUkhVZTJYV0pVYzBRaEoxaFlNdGQrWmNpVFk2WTV1Ti85bHU3cnMzS1NvRnJYZ3Z6VWVGMEsrbCtKNmZaCm1VbE8rS1dBMnlVUEhHTmlpc2t6WjJzOEVJUEdyZDZvelJhT2pmQUhOM0dmOHF2OFFmWEJpK3dBTjEwSjVVNkEKNy9xeFhEZ0dwUnRLNGR3NExUemNxeCtRR3RWS25PN1JjR3pNN3ZSWCtCaTZoRzZICi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=
+  - https://cacerts.digicert.com/DigiCertGlobalRootCA.crt.pem
+  - http://pki.leidos.com/Federal%20Bridge%20CA%20G4.cer
+  - http://pki.leidos.com/Federal%20Common%20Policy%20CA%20G2.cer
+  - http://pki.leidos.com/IdenTrust%20Global%20Common%20Root%20CA%201.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Issuing%20CA-2-Machines.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Issuing%20CA-2-Users.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Issuing%20CA-Machines.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Issuing%20CA-Users.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Issuing%20CA-Users.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Root%20CA-2.cer
+  - http://pki.leidos.com/Leidos%20Cloud%20PKI%20Root%20CA.cer
+  - http://pki.leidos.com/Leidos%20FBCA%20Cloud%20PKI%20CA-2.cer
+  keycloak_url_prefix: auth

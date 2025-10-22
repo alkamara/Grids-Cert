@@ -1,0 +1,4 @@
+parameters:
+  argocd_landing_page_favicon: https://${argocd_url_prefix}.${domain_fqdn}/assets/favicon/favicon-32x32.png
+  argocd_landing_page_title: ArgoCD
+  argocd_url_prefix: argocd

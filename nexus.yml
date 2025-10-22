@@ -1,0 +1,11 @@
+parameters:
+  nexus_cpu_limit: "4"
+  nexus_cpu_request: "4"
+  nexus_database_memory_limit: 4Gi
+  nexus_database_memory_request: 1Gi
+  nexus_database_size: 20Gi
+  nexus_landing_page_favicon: https://${nexus_url_prefix}.${domain_fqdn}/static/rapture/resources/favicon.svg
+  nexus_landing_page_title: Nexus
+  nexus_memory_limit: 16Gi
+  nexus_url_prefix: nexus
+  nexus_volume_size: 500Gi

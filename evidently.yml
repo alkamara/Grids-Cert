@@ -1,0 +1,4 @@
+parameters:
+  evidently_landing_page_favicon: https://${evidently_url_prefix}.${domain_fqdn}/favicon.ico
+  evidently_landing_page_title: Evidently.ai
+  evidently_url_prefix: evidently

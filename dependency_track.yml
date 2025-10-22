@@ -1,0 +1,4 @@
+parameters:
+  dependency_track_landing_page_favicon: https://${dependency_track_url_prefix}.${domain_fqdn}/favicon.ico
+  dependency_track_landing_page_title: Dependency Track
+  dependency_track_url_prefix: bom

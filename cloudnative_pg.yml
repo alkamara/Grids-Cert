@@ -1,0 +1,2 @@
+parameters:
+  cloudnative_pg_is_enabled: true

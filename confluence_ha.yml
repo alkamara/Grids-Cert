@@ -1,0 +1,15 @@
+parameters:
+  confluence_ha_landing_page_favicon: https://${confluence_url_prefix}.${domain_fqdn}/favicon.ico
+  confluence_ha_landing_page_title: Confluence
+  confluence_ha_license_string: |
+    AAABsw0ODAoPeNptkkFv4jAQhe/+FZb2sntwaidNliJZWjYxFAjQ3dBKIC6uMwSrIaFOQmF/fQ0Bb
+    Sv1aM+b8ffe+Nt80+Bek2HXxYx16W3XoziM5til7i0KDchal0Uka+CnG0I7xPVQBJUyencq8bAs1
+    nkDhQL83eokDqGowfzAPqX4sQJTrbo4gj3k5Q4MnoPZ4lgrKCpAE6mttpC2WRx22hyvDwWEMeIGa
+    Npsn8HM1uc53E5El9av5XlbfLLiE5qLkub5P2ltGkBiL/PmbIqvZW4ZZiaTha7aqxh0WlZIWU+OV
+    LXeQ9tlTdb2LCxwzo1WG2lSJ3OyskzfdPErP7c5qtxeEe5lteGT8C3s9/M0HywGg0oFcc+EPr0fl
+    Xr8esf+qd7mz+HA/OVNfypGwbgUWTLQ6XLJXnV47K34irckF8/z4w6mcgs8Ek8inj2Iv205qaWxi
+    V/8XMTDiMfDKBFTEtuAOnd+4KEEzB6Mrfz2FwmZeOyRLILxkCSjjt+OOi2w3V/r+wWO1zBZQOlP2
+    vE8hh4aYxOo4MO38AkLrimdGZWROnOk86KL7GM+loh/pnoHHHrTVzAsAhQu4NTDWY8qeNNgtfbUN
+    +ShaTp/tQIUS9KSszXpYotfxfVGFoD8eQjZK8I=X02ks
+  confluence_ha_url_prefix: confluence
+  confluence_ha_volume_size: 10Gi

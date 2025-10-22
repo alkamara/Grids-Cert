@@ -1,0 +1,9 @@
+parameters:
+  matomo_cpu_limit: 1000m
+  matomo_cpu_request: 200m
+  matomo_landing_page_favicon: https://${matomo_url_prefix}.${domain_fqdn}/plugins/CoreHome/images/applogo_256.png
+  matomo_landing_page_title: Matomo Web Analytics
+  matomo_memory_limit: 1024Mi
+  matomo_memory_request: 256Mi
+  matomo_url_prefix: matomo
+  matomo_volume_size: 8Gi

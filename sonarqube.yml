@@ -1,0 +1,8 @@
+parameters:
+  sonarqube_cpu_request: 500m
+  sonarqube_landing_page_favicon: https://${sonarqube_url_prefix}.${domain_fqdn}/favicon.ico
+  sonarqube_landing_page_title: SonarQube
+  sonarqube_memory_limit: 8Gi
+  sonarqube_memory_request: 2Gi
+  sonarqube_url_prefix: sonarqube
+  sonarqube_volume_size: 10Gi

@@ -1,0 +1,5 @@
+parameters:
+  harbor_database_size: 1Gi
+  harbor_landing_page_favicon: https://${harbor_url_prefix}.${domain_fqdn}/favicon.ico
+  harbor_landing_page_title: Harbor
+  harbor_url_prefix: harbor

@@ -1,0 +1,6 @@
+parameters:
+  argo_workflows_landing_page_favicon: https://${argo_workflows_url_prefix}.${domain_fqdn}/assets/favicon/favicon-32x32.png
+  argo_workflows_landing_page_title: Argo Workflows
+  argo_workflows_role_mappings: ${argo_workflows_admin_group_access}:argo-user, ${argo_workflows_k8s_group_access}:argo-user,
+    ${argo_workflows_developer_group_access}:argo-user
+  argo_workflows_url_prefix: argo

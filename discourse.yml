@@ -1,0 +1,6 @@
+parameters:
+  discourse_database_size: 20Gi
+  discourse_landing_page_favicon: https://${discourse_url_prefix}.${domain_fqdn}/images/discourse-logo-sketch-small.png
+  discourse_landing_page_title: Discourse
+  discourse_url_prefix: discourse
+  discourse_volume_size: 50Gi

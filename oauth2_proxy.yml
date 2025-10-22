@@ -1,0 +1,4 @@
+parameters:
+  oauth2_proxy_memory_limit: 500Mi
+  oauth2_proxy_memory_request: 500Mi
+  oauth2_proxy_url_prefix: oauth2-proxy

@@ -1,0 +1,8 @@
+parameters:
+  environment_admin_email: psdo.grids.admins@leidos.com
+  environment_iam_provisioned: true
+  environment_id: "0003117"
+  environment_installer_host_cidr: 10.158.0.0/16
+  environment_is_leidos_internal: true
+  environment_subnets_private_regex: Public+
+  environment_subnets_public_regex: Public+

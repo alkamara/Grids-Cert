@@ -1,0 +1,4 @@
+parameters:
+  fluentbit_cpu_request: 250m
+  fluentbit_memory_limit: 512Mi
+  fluentbit_memory_request: 128Mi

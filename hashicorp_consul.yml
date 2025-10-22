@@ -1,0 +1,4 @@
+parameters:
+  hashicorp_consul_landing_page_favicon: https://${hashicorp_consul_url_prefix}.${domain_fqdn}/ui/assets/favicon.ico
+  hashicorp_consul_landing_page_title: Consul
+  hashicorp_consul_url_prefix: consul

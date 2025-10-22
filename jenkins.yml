@@ -1,0 +1,5 @@
+parameters:
+  jenkins_landing_page_favicon: https://${jenkins_url_prefix}.${domain_fqdn}/favicon.ico
+  jenkins_landing_page_title: Jenkins
+  jenkins_url_prefix: jenkins
+  jenkins_volume_size: 8Gi

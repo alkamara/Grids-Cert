@@ -1,0 +1,16 @@
+parameters:
+  jira_ha_landing_page_favicon: https://${jira_url_prefix}.${domain_fqdn}/favicon.ico
+  jira_ha_landing_page_title: Jira
+  jira_ha_license_string: |
+    AAAB+g0ODAoPeNqVUltv2jAUfs+vsLSXTVOyXCBNkSytTdwBhYQRSteJFzc5BK+5zXag7NcvF9Co2
+    iLtMSfH3/luH+4hRldVgkwDmdbAsgc9A7neApm62VNcDlSyIveoBNxMVN1RTVOZsAhyAYt9CT7NA
+    HtkSSbBjMyVX4xT7fCbxKx5jIm/IPPZfBQSxa+yR+DB+k4AF7ivH5HIc8n4/njGVg1DNe0OrORFX
+    EVSaz5UUazljnLQaCTZFrDkFShh9Sgizsr2WDshW5pWLXO8pqmADqmGpy7kEni3lXa3h1Rs8NTdu
+    TeeI63sQdx/fwb4koF/I2IjsGg0fFhfbebLP44ZDHuWQ25/yPFW3HD/9+VP8zO5TlZ4hY9SRh6ej
+    LyQ+OqkluJc9m3znJBQUt4w6niGwLfAa4jr8Wiq3s7DpdoL7sbqt6F3oTzBflnb1qgybF2/0B3LM
+    pSEA+SboiyBnzF+VvFoQwWcJNlXDfvF69aakjNx9JX4+KWON2690QEP/sUxrsWi8CAWfWwiQF0Gn
+    1BfR20PVgPkwRbSooZFC+AZOmArU8rq1Zzm0f835FXVTsmf1ucMxjuNOaZgKgFPaM5EV7UJsLgQi
+    lvkssYnNfkUc1bbzmMt0ZKiiHcs/5q2W1pUZN3lV1TeN/aA3E4jTlmiUe2J5ckp5l+Mdk9sMC0CF
+    QCV1s8vnAQiF+yIExtuicFzvREZKAIUcvz/vsjb5XEuswxDE4vRuArAiSE=X02o0
+  jira_ha_url_prefix: jira
+  jira_ha_volume_size: 50Gi

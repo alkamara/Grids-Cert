@@ -1,0 +1,8 @@
+parameters:
+  gitlab_database_max_connections: "300"
+  gitlab_database_memory_limit: 4Gi
+  gitlab_database_memory_request: 1Gi
+  gitlab_database_shared_memory: 1Gi
+  gitlab_landing_page_favicon: https://${gitlab_url_prefix}.${domain_fqdn}/favicon.ico
+  gitlab_landing_page_title: Gitlab
+  gitlab_url_prefix: gitlab

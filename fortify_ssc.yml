@@ -1,0 +1,4 @@
+parameters:
+  fortify_ssc_landing_page_title: Fortify SSC
+  fortify_ssc_url_prefix: fortify
+  fortify_ssc_volume_size: 50Gi

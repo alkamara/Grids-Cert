@@ -1,0 +1,6 @@
+parameters:
+  crowd_ha_landing_page_favicon: https://${crowd_url_prefix}.${domain_fqdn}/favicon.ico
+  crowd_ha_landing_page_title: crowd
+  crowd_ha_role_mappings: ${crowd_ha_admin_group_access}:crowd-administrators, ${crowd_ha_developer_group_access}:crowd-users
+  crowd_ha_url_prefix: crowd
+  crowd_ha_volume_size: 10Gi

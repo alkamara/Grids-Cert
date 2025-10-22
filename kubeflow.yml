@@ -1,0 +1,4 @@
+parameters:
+  kubeflow_landing_page_favicon: https://v1-8-branch.kubeflow.org/favicons/favicon.ico
+  kubeflow_landing_page_title: Kubeflow
+  kubeflow_url_prefix: kubeflow

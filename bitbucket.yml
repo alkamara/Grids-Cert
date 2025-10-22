@@ -1,0 +1,6 @@
+parameters:
+  bitbucket_landing_page_favicon: https://${bitbucket_url_prefix}.${domain_fqdn}/favicon.ico
+  bitbucket_landing_page_title: Bitbucket
+  bitbucket_role_mappings: ${bitbucket_admin_group_access}:stash-administrators, ${bitbucket_developer_group_access}:stash-users
+  bitbucket_url_prefix: bitbucket
+  bitbucket_volume_size: 8Gi

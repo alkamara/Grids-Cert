@@ -1,0 +1,2 @@
+parameters:
+  huggingface_tgi_url_prefix: tgi

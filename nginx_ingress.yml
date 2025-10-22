@@ -1,0 +1,5 @@
+parameters:
+  nginx_ingress_cpu_limit: 1000m
+  nginx_ingress_cpu_request: 500m
+  nginx_ingress_memory_limit: 1024Mi
+  nginx_ingress_memory_request: 512Mi

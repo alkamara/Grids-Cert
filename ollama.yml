@@ -1,0 +1,4 @@
+parameters:
+  ollama_landing_page_favicon: https://www.ollama.com/images/favicon.png
+  ollama_landing_page_title: ollama
+  ollama_url_prefix: ollama

@@ -1,0 +1,4 @@
+parameters:
+  argocd_gitops_deploy: true
+  falco_gitops_deploy: true
+  landing_page_gitops_deploy: true

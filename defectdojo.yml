@@ -1,0 +1,4 @@
+parameters:
+  defectdojo_landing_page_favicon: https://${defectdojo_url_prefix}.${domain_fqdn}/static/dojo/img/favicon.png
+  defectdojo_landing_page_title: DefectDojo
+  defectdojo_url_prefix: defectdojo

@@ -1,0 +1,3 @@
+parameters:
+  litellm_landing_page_title: litellm
+  litellm_url_prefix: litellm

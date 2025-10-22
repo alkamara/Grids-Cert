@@ -1,0 +1,4 @@
+parameters:
+  bom_operator_gitops_auto_sync: true
+  grafana_gitops_auto_sync: true
+  landing_page_gitops_auto_sync: true

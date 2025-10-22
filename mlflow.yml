@@ -1,0 +1,5 @@
+parameters:
+  mlflow_landing_page_favicon: https://${mlflow_url_prefix}.${domain_fqdn}/oidc/static/favicon.ico
+  mlflow_landing_page_title: MLflow
+  mlflow_role_mappings: ${mlflow_admin_group_access}:app-admin, ${mlflow_developer_group_access}:developers
+  mlflow_url_prefix: mlflow

@@ -1,0 +1,8 @@
+parameters:
+  aws_ami_name: pkr-al2-cis-eks
+  aws_arn: aws-us-gov
+  aws_default_region: us-gov-west-1
+  aws_project: grids
+  aws_vpc_cidr_block: 10.103.6.0/23
+  aws_vpc_id: grids
+  aws_vpc_provisioned: true

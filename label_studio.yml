@@ -1,0 +1,5 @@
+parameters:
+  label_studio_landing_page_favicon: https://labelstud.io/images/favicon.svg
+  label_studio_landing_page_title: Label Studio
+  label_studio_role_mappings: ${label_studio_admin_group_access}:app-admin, ${label_studio_developer_group_access}:developers
+  label_studio_url_prefix: label-studio

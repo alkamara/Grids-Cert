@@ -1,0 +1,4 @@
+parameters:
+  kubernetes_repository_artifact_path: artifactory/ecmpsdo-generic
+  kubernetes_repository_artifact_server: artifactory.sdo.leidos.com
+  kubernetes_repository_docker_server: 333922786138.dkr.ecr.us-gov-west-1.amazonaws.com

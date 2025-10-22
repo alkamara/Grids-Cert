@@ -1,0 +1,8 @@
+parameters:
+  grafana_cpu_limit: 150m
+  grafana_cpu_request: 100m
+  grafana_landing_page_favicon: https://${grafana_url_prefix}.${domain_fqdn}/public/img/fav32.png
+  grafana_landing_page_title: Grafana
+  grafana_memory_limit: 256Mi
+  grafana_memory_request: 128Mi
+  grafana_url_prefix: grafana

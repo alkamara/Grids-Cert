@@ -1,0 +1,4 @@
+parameters:
+  speedtest_landing_page_favicon: https://${speedtest_url_prefix}.${domain_fqdn}/assets/images/icons/favicon.ico
+  speedtest_landing_page_title: Speedtest
+  speedtest_url_prefix: speedtest

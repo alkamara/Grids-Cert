@@ -1,0 +1,10 @@
+parameters:
+  bom_operator_cpu_limit: "2"
+  bom_operator_cpu_request: 500m
+  bom_operator_database_size: 20Gi
+  bom_operator_landing_page_favicon: https://${changelog_url_prefix}.${domain_fqdn}/favicon.ico
+  bom_operator_landing_page_title: Bill of Materials - Changelogs
+  bom_operator_memory_request: 1Gi
+  bom_operator_role_mappings: ${bom_operator_admin_group_access}:admin, ${bom_operator_k8s_group_access}:admin,
+    ${bom_operator_developer_group_access}:user
+  bom_operator_url_prefix: changelog

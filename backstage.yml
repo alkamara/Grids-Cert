@@ -1,0 +1,4 @@
+parameters:
+  backstage_landing_page_favicon: https://${backstage_url_prefix}.${domain_fqdn}/favicon.ico
+  backstage_landing_page_title: Backstage
+  backstage_url_prefix: backstage

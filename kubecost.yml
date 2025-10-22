@@ -1,0 +1,4 @@
+parameters:
+  kubecost_landing_page_favicon: https://${kubecost_url_prefix}.${domain_fqdn}/favicon.ico
+  kubecost_landing_page_title: Kubecost
+  kubecost_url_prefix: cost

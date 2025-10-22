@@ -1,0 +1,4 @@
+parameters:
+  sourcegraph_landing_page_favicon: https://${sourcegraph_url_prefix}.${domain_fqdn}/favicon.ico
+  sourcegraph_landing_page_title: Sourcegraph
+  sourcegraph_url_prefix: sourcegraph

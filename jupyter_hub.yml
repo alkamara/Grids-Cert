@@ -1,0 +1,4 @@
+parameters:
+  jupyter_hub_landing_page_favicon: https://${jupyter_hub_url_prefix}.${domain_fqdn}/hub/static/favicon.ico
+  jupyter_hub_landing_page_title: Jupyter Hub
+  jupyter_hub_url_prefix: jupyterhub

@@ -1,0 +1,6 @@
+parameters:
+  deploy_soe_githost: git_grids
+  deploy_soe_gitpass: pss://jI6ZhIiXiomKk5mOhpGY
+  deploy_soe_gitpath: gitrepo_target
+  deploy_soe_gitrepo: https://modified_git_url
+  deploy_soe_gituser: git_user

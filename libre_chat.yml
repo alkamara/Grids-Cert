@@ -1,0 +1,12 @@
+parameters:
+  libre_chat_cpu_limit: 512m
+  libre_chat_cpu_request: 125m
+  libre_chat_database_memory_limit: 1Gi
+  libre_chat_landing_page_favicon: https://${libre_chat_url_prefix}.${domain_fqdn}/assets/favicon-32x32.png
+  libre_chat_landing_page_title: Libre Chat
+  libre_chat_memory_limit: 512Mi
+  libre_chat_memory_request: 256Mi
+  libre_chat_mongo_database_cpu_request: 500m
+  libre_chat_mongo_database_memory_limit: 1Gi
+  libre_chat_mongo_database_size: 50Gi
+  libre_chat_url_prefix: librechat
